@@ -1,0 +1,20 @@
+<view>
+    <scroll-view></scroll-view>
+    <view wx:if="{{isShow}}">show</view>
+    <view wx:elif="{{!isShow}}"> dont`t show </view>
+    <view wx:for="{{nums}}">{{item}}</view>
+
+    <!--<switch wx:for="{{objectArray}}" wx:key="unique" style="display: block;"> {{item.id}} </switch>
+    <button bindtap="switch"> Switch </button>
+    <button bindtap="addToFront"> Add to the front </button>
+
+    <switch wx:for="{{numberArray}}" wx:key="*this" style="display: block;"> {{item}} </switch>
+    <button bindtap="addNumberToFront"> Add to the front </button>-->
+    <template name="msgItem">
+        <view>
+            <text> {{index}}: {{msg}} </text>
+            <text> Time: {{time}} </text>
+        </view>
+    </template>
+    <template is="msgItem" data="{{...msgData}}"/>
+</view>
