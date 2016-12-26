@@ -4,6 +4,8 @@
     <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
     <text class="userinfo-nickname">{{userInfo.nickName}}</text>
   </view>
+  <import src="../../components/headBlock.wxml"/>
+  <template is="headBlock"/>
   <view class="usermotto">
     <text bindtap="_changeMotto" class="user-motto">{{motto}}</text>
   </view>

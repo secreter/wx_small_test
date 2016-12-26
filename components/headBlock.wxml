@@ -1,0 +1,6 @@
+<template name="headBlock">
+<view>
+    <image src="../../assets/img/head.jpeg"></image>
+    <text>head</text>
+</view>
+</template>
